@@ -28,7 +28,6 @@ public class FilmManager {
     public FilmItem[] findLast() {
         FilmItem[] all = findAll();
 
-        new FilmManager(limit);
         int resultLength = limit < items.length ? limit : items.length;
         FilmItem[] result = new FilmItem[resultLength];
         for (int i = 0; i < result.length; i++) {
